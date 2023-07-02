@@ -1,0 +1,20 @@
+.imagenLogoPortada {
+    width: 30%;
+    margin: 100px auto;
+}
+
+.imagenLogoPortada img {
+    width: 100%;
+}
+
+
+.flechaPortada {
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 20px);
+}
+
+.flechaPortada i {
+    color: white;
+    font-size: 32px;
+}
