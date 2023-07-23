@@ -1,5 +1,4 @@
-import './Portada.css';
-import LogoSoloImg from '../../assets/Logo/LogoSoloImagen.png';
+import LogoSoloImg from '../assets/Logo/LogoSoloImagen.png';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -31,12 +30,12 @@ const Portada = () => {
 
     return (
         <div id='portada'>
-            <motion.div id="cover-image" initial={{ opacity: 0 }} animate={{ opacity: isVisible ? 1 : 0 }} transition={{ duration: 0.5 }} style={{ width: '100%', height: 'auto' }}>
+            <motion.div id="cover-image" initial={{ opacity: 0 }} animate={{ opacity: isVisible ? 1 : 0 }} transition={{ duration: 1.5 }} style={{ width: '100%', height: 'auto' }}>
                 <div className='imagenLogoPortada'>
-                    <img src={LogoSoloImg} />
+                    <img src={LogoSoloImg} alt='Logo JIS Development'/>
                 </div>
             <div className='flechaPortada'>
-                <a href='#prueba2'><i><FontAwesomeIcon icon={faAngleDown} /></i></a>
+                <a href='#widgetsTechnologies'><i><FontAwesomeIcon icon={faAngleDown} /></i></a>
             </div>
             </motion.div>
         </div>

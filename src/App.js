@@ -1,22 +1,19 @@
-import './App.css';
-import Navbar from './components/Navbar/Navbar';
-import Portada from './components/Portada/Portada';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './routes/Home';
+import Contacto from './routes/Contacto';
 
 function App() {
   return (
-    <div className='App'>
+    <div>
       <Navbar />
-      <div>
-        <Portada />
-      </div>
-      <div className='prueba'>
-
-      </div>
-      <div id='prueba2'>
-        <p>Hola</p>
-      </div>
+      <main>
+        <Home />
+      </main>
+      <Contacto />
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

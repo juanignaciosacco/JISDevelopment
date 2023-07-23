@@ -1,0 +1,29 @@
+$colorAzul:  rgb(32, 97, 187);
+$colorBlanco: rgb(207, 207, 207);
+$colorNegro: rgb(20, 20, 20);
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  color: $colorAzul;
+}
+
+.btn {
+    min-width: 130px;
+    height: 40px;
+    color: $colorBlanco;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid $colorAzul;
+    background: $colorAzul;
+    &:hover {
+      background: $colorBlanco;
+      color: $colorAzul
+    }
+  }

@@ -1,0 +1,21 @@
+// ACA VAMOS A IMPORTAR LOS ESTILOS
+
+// UI SETTINGS
+@import './base/settings';
+
+// ROUTES
+@import './components/app';
+@import './components/home';
+@import './components/contacto';
+
+// COMPONENTS
+@import './components/navbar';
+@import './components/portada';
+@import './components/paginaWebList';
+@import './components/paginaWebFrame';
+@import './components/widgetTechnologies';
+@import './components/formulario';
+@import './components/infoContacto';
+@import './components/footer';
+
+// SCREENS

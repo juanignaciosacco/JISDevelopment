@@ -1,0 +1,33 @@
+.imagenLogoPortada {
+    width: 500px;
+    margin: 100px auto;
+    img {
+        width: 100%;
+    }
+}
+
+.flechaPortada {
+    position: absolute;
+    bottom: 10px;
+    left: calc(50% - 20px);
+    i {
+        color: $colorAzul;
+        font-size: 32px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .imagenLogoPortada {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .flechaPortada {
+        bottom: -10px;
+        left: calc(50% - 10px);
+        i {
+            color: $colorAzul;
+            font-size: 32px;
+        }
+    }
+}

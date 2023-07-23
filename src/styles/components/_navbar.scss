@@ -1,0 +1,36 @@
+/* Estilos generales del Navbar */
+.navbar {
+    background-color: $colorNegro;
+    color: $colorAzul;
+    padding: 20px 20px;
+    .navbar-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .navbar-logo {
+          width: 15%;
+          img {
+              width: 100%;
+            }
+        }
+        .navbar-links {
+            display: flex;
+            a {
+                color: $colorAzul;
+                text-decoration: none;
+                padding: 0 10px;
+            }
+        }
+      }
+  }
+
+@media only screen and (max-width:480px) {
+  .navbar {
+    .navbar-container {
+        .navbar-logo {
+          width: 45%;
+        }
+      }
+  }
+}
+  

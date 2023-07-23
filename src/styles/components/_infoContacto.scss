@@ -1,0 +1,17 @@
+#infoContacto_container {
+    p {
+        margin-top: 40px;
+        i {
+            font-size: 25px;
+            color: $colorAzul;
+            margin-right: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #infoContacto_container {
+        margin-top: 50px;
+        text-align: center;
+    }
+}
