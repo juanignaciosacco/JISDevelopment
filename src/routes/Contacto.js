@@ -3,7 +3,7 @@ import InfoContacto from "../components/InfoContacto"
 
 const Contacto = () => {
   return (
-    <div id="contacto">
+    <div id="Contacto">
       <h1>Contact us!</h1>
       <div id="contacto_container">
           <Formulario />

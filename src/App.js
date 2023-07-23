@@ -2,14 +2,14 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './routes/Home';
 import Contacto from './routes/Contacto';
+import FlechaSubirWidget from './components/FlechaSubirWidget';
 
 function App() {
   return (
-    <div>
+    <div id='Inicio'>
       <Navbar />
-      <main>
-        <Home />
-      </main>
+      <FlechaSubirWidget />
+      <Home />
       <Contacto />
       <footer>
         <Footer />

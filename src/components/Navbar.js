@@ -9,7 +9,7 @@ const Navbar = () => {
             <img src={Logo} alt='Imagen Logo JIS Development'/>
         </div>
         <div className="navbar-links">
-          <a href="#contacto">Contact</a>
+          <a href="#Contacto">Contact</a>
         </div>
       </div>
     </nav>

@@ -4,11 +4,10 @@ import WidgetTechnologies from '../components/WidgetsTechnologies'
 
 const Home = () => {
 
-
   return (
     <div>
         <div>
-            <Portada />
+          <Portada />
         </div>
         <div id='widgetsTechnologies'>
           <WidgetTechnologies />
