@@ -1,17 +1,14 @@
 .footer {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 80px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
     .socialMedia {
         width: 20%;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-
         a {
             color: $colorBlanco;
             &:hover {
@@ -28,7 +25,6 @@
     .footer {
         .socialMedia {
             width: 90%;
-
             a {
                 i {
                     font-size: 40px;

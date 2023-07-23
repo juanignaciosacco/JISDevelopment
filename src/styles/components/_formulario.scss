@@ -6,6 +6,9 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        .recaptcha {
+            margin-bottom: 20px;
+        }
         input {
             height: 30px;
             width: 100%;
@@ -23,6 +26,7 @@
         }
     }
 }
+
 
 @media only screen and (max-width: 480px) {
     .form_container {

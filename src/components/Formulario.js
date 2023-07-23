@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef } from "react"
 import ReCAPTCHA from "react-google-recaptcha";
 
 const Formulario = () => {
@@ -10,6 +10,8 @@ const Formulario = () => {
   const [message, setMessage] = useState()
   const [infoMail, setInfoMail] = useState({})
   const [respuesta, setRespuesta] = useState();
+  const captcha  = useRef(null)
+  const [captchaValido, setCaptchaValido] = useState(false)
 
   const nameChangeHandler = (ev) => {
     setName(ev.target.value)
@@ -32,7 +34,11 @@ const Formulario = () => {
   }
 
   const onChange = () => {
-    console.log("Cambie")
+    if(captcha.current.getValue()) {
+      setCaptchaValido(true)
+    } else {
+      setCaptchaValido(false)
+    }
   }
 
   useEffect(() => {
@@ -47,13 +53,17 @@ const Formulario = () => {
 
   const submitHandler = (ev) => {
     ev.preventDefault()
-    fetch("http://ec2-18-119-17-145.us-east-2.compute.amazonaws.com:8080/contacto", {
-      method: "POST",
-          headers: {
-          "Content-Type": "application/json",
-          },
-              body: JSON.stringify(infoMail),
-    }).then((res) => console.log(setRespuesta(res.status)))
+    if (captchaValido) {
+      fetch("http://ec2-18-119-17-145.us-east-2.compute.amazonaws.com:8080/contacto", {
+        method: "POST",
+            headers: {
+            "Content-Type": "application/json",
+            },
+                body: JSON.stringify(infoMail),
+      }).then((res) => console.log(setRespuesta(res.status)))
+    } else {
+      alert("Debe completar la verificacion de google")
+    }
   }
 
   useEffect(() => {
@@ -77,9 +87,10 @@ const Formulario = () => {
             <textarea name="mensaje" id="mensaje" onChange={messageChangeHandler} required></textarea>
             <div className="recaptcha">
               <ReCAPTCHA
-                sitekey="Your client site key"
+                ref={captcha}
+                sitekey="6Let-UknAAAAAFaZCp9ITaAThJB9FvzhIe3tSlbZ"
                 onChange={onChange}
-              />,
+              />
             </div>
             <button onClick={submitHandler} className="btn">Enviar</button>
         </form>
