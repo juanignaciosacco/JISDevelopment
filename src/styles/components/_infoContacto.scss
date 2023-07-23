@@ -1,10 +1,14 @@
 #infoContacto_container {
-    p {
-        margin-top: 40px;
-        i {
-            font-size: 25px;
-            color: $colorAzul;
-            margin-right: 10px;
+    a {
+        text-decoration: none;
+        color: $colorBlanco;
+        p {
+            margin-top: 40px;
+            i {
+                font-size: 25px;
+                color: $colorAzul;
+                margin-right: 10px;
+            }
         }
     }
 }
