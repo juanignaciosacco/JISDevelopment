@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Formulario = () => {
 
@@ -28,6 +29,10 @@ const Formulario = () => {
   
   const messageChangeHandler = (ev) => {
     setMessage(ev.target.value)
+  }
+
+  const onChange = () => {
+    console.log("Cambie")
   }
 
   useEffect(() => {
@@ -70,6 +75,12 @@ const Formulario = () => {
             <input type="text" id="asunto" name="asunto" onChange={subjectChangeHandler} required />
             <label htmlFor="mensaje">Mensaje</label>
             <textarea name="mensaje" id="mensaje" onChange={messageChangeHandler} required></textarea>
+            <div className="recaptcha">
+              <ReCAPTCHA
+                sitekey="Your client site key"
+                onChange={onChange}
+              />,
+            </div>
             <button onClick={submitHandler} className="btn">Enviar</button>
         </form>
     </div>
