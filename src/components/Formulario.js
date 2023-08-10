@@ -88,7 +88,7 @@ const Formulario = () => {
             <div className="recaptcha">
               <ReCAPTCHA
                 ref={captcha}
-                sitekey="6Let-UknAAAAAFaZCp9ITaAThJB9FvzhIe3tSlbZ"
+                sitekey={process.env.REACT_APP_SITEKEY_RECAPTCHA}
                 onChange={onChange}
               />
             </div>

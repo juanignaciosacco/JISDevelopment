@@ -10,6 +10,7 @@
         flex-direction: row;
         justify-content: space-evenly;
         a {
+            z-index: 101;
             color: $colorBlanco;
             &:hover {
                 color: $colorAzul;
