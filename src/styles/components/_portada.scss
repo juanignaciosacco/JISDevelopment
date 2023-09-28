@@ -1,6 +1,6 @@
 .imagenLogoPortada {
     width: 500px;
-    margin: 100px auto;
+    margin: 5vh auto;
     img {
         width: 100%;
     }
@@ -9,7 +9,7 @@
 .flechaPortada {
     position: absolute;
     bottom: 10px;
-    left: calc(50% - 20px);
+    left: calc(50% - 16px);
     i {
         color: $colorAzul;
         font-size: 32px;
