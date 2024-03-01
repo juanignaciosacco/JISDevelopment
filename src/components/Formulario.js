@@ -61,7 +61,6 @@ const Formulario = () => {
   }
 
   useEffect(() => {
-    console.log(respuesta)
     if (respuesta !== undefined) {
       respuesta === 200 ? Swal.fire("Mensaje enviado", "Mensaje enviado correctamente", "success") : Swal.fire("Problema con el envio", "No se ha podido enviar tu mail", "error")
     }

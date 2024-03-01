@@ -30,9 +30,14 @@ const PaginasWebList = () => {
             name: "SIB",
             url: "https://sib.com.uy",
             id: 4
+        },
+        {
+            name: "AMD Import",
+            url: "https://amdimport.com",
+            id: 5
         }
     ]
-
+    
     const handleWebsiteClick = (ev) => {
         setPaginaSeleccionada(lista[ev.target.id])
     }
