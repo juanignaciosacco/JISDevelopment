@@ -33,6 +33,7 @@ const Navbar = () => {
           <FontAwesomeIcon icon={faBarsStaggered} />
         </button>
         <div className={`navbar-links ${isOpen && windowWidth <= 784 ? 'active' : ''}`}>
+          <a href='#paginasWeb'>Our works</a>
           <a href="#sobreNosotros">About</a>
           <a href="#opcionesDePago">Payment options</a>
           <a href="#Contacto">Contact us</a>

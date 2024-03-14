@@ -29,3 +29,24 @@ h2 {
       color: $colorAzul
     }
   }
+
+  .btn2 {
+    min-width: 130px;
+    height: 40px;
+    color: $colorAzul;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid $colorAzul;
+    background: $colorBlanco;
+    &:hover {
+      background: $colorAzul;
+      color: $colorBlanco
+    }
+  }
