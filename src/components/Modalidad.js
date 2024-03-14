@@ -15,7 +15,7 @@ const Modalidad = () => {
         <button onClick={btnClickHandler} className='btn' id='subscriptionBtn'>Subscription</button>
       </div>
       <div className='textoModalidad'>
-      {btnSeleccionado == "lumpSumBtn" ? (
+      {btnSeleccionado === "lumpSumBtn" ? (
         <div id='lumpSum'>
           <h3>Lump sum payment</h3>
           <p>
@@ -25,7 +25,7 @@ const Modalidad = () => {
             Charging 50% in advance and the remaining 50% upon delivery of the product.
           </p>
         </div>
-      ) : btnSeleccionado == "subscriptionBtn" && (
+      ) : btnSeleccionado === "subscriptionBtn" && (
         <div id='subscription'>
           <h3>Subscription</h3>
           <p>The subscription is a 6-month contract, which depending on the subscription acquired, provides various services during the subscribed period.</p>
