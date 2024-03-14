@@ -69,15 +69,15 @@ const Formulario = () => {
   return (
     <div className="form_container">
         <form onSubmit={submitHandler}>
-            <label htmlFor="name">Nombre</label>
+            <label htmlFor="name">Name</label>
             <input type="text" id="name" name="name" onChange={inputChangeHandler} required/>
-            <label htmlFor="apellido">Apellido</label>
+            <label htmlFor="apellido">Lastname</label>
             <input id="apellido" name="apellido" onChange={inputChangeHandler} required/>
             <label htmlFor="email">Email</label>
             <input type="email" id="email" name="email" onChange={inputChangeHandler} required/>
-            <label htmlFor="asunto">Asunto</label>
+            <label htmlFor="asunto">Subject</label>
             <input type="text" id="asunto" name="asunto" onChange={inputChangeHandler} required />
-            <label htmlFor="mensaje">Mensaje</label>
+            <label htmlFor="mensaje">Message</label>
             <textarea name="mensaje" id="mensaje" onChange={inputChangeHandler} required></textarea>
             <div className="recaptcha">
               <ReCAPTCHA
@@ -86,7 +86,7 @@ const Formulario = () => {
                 onChange={onChange}
               />
             </div>
-            <button type="submit" className="btn">Enviar</button>
+            <button type="submit" className="btn">Send</button>
         </form>
     </div>
   )

@@ -9,8 +9,9 @@ const Navbar = () => {
             <img src={Logo} alt='Imagen Logo JIS Development'/>
         </div>
         <div className="navbar-links">
-          <a href="#Contacto">Contact</a>
-          <a href="#sobreNosotros">Sobre nosotros</a>
+          <a href="#sobreNosotros">About</a>
+          <a href="#opcionesDePago">Payment options</a>
+          <a href="#Contacto">Contact us</a>
         </div>
       </div>
     </nav>
