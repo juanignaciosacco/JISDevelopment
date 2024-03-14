@@ -19,11 +19,12 @@
 
 .list {
     list-style: none;
-    text-align: start;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    column-gap: 20px;
     li {
         margin-top: 15px;
         cursor: pointer;
@@ -42,6 +43,9 @@
     .frameListContainer {
       margin-top: 50px;
       row-gap: 50px;
+      .texto_paginas_list {
+        width: 80%;
+      }
     }
 
     .list {
@@ -49,5 +53,6 @@
       margin: 0;
       padding: 0;
     }
+
   }
 

@@ -1,41 +1,82 @@
-/* Estilos generales del Navbar */
 .navbar {
-    background-color: $colorNegro;
-    color: $colorAzul;
-    padding: 20px 20px;
-    .navbar-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        .navbar-logo {
-          width: 15%;
-          img {
-              width: 100%;
-            }
-        }
-        .navbar-links {
-            display: flex;
-            a {
-                color: $colorAzul;
-                text-decoration: none;
-                padding: 0 40px;
-            }
-        }
-      }
-  }
+  background-color: $colorNegro;
+  color: $colorAzul;
+  padding: 20px 20px;
 
-@media only screen and (max-width:480px) {
-  .navbar {
-    .navbar-container {
-        .navbar-logo {
-          width: 45%;
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .navbar-logo {
+      max-width: 200px;
+      img {
+        width: 100%;
+      }
+    }
+
+    .navbar-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: $colorAzul;
+      font-size: 18px;
+      padding: 10px;
+    }
+
+    .oculto { 
+      display: none;
+    }
+
+    .navbar-links {
+      display: flex;
+
+      a {
+        color: $colorAzul;
+        text-decoration: none;
+        padding: 0 40px;
+      }
+    }
+
+    .navbar-links.active {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Centra los enlaces verticalmente */
+      align-items: center; /* Centra los enlaces horizontalmente */
+      position: absolute;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      background-color: $colorNegro;
+      padding: 20px;
+
+      a {
+        color: $colorAzul;
+        text-decoration: none;
+        padding: 10px 0;
+
+        &:hover {
+          background-color: lighten($colorNegro, 10%);
         }
-        .navbar-links {
-          a {
-            padding: 0 5px;
-          }
       }
     }
   }
 }
+
+@media only screen and (max-width: 784px) {
+  .navbar {
+    .navbar-container {
+      .navbar-logo {
+        width: 50%;
   
+        img {
+          width: 100%;
+        }
+      }
+      .navbar-links {
+        display: none;
+      }
+    }
+  }
+}
