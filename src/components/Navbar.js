@@ -29,10 +29,10 @@ const Navbar = () => {
         <div className="navbar-logo">
           <img src={Logo} alt='Imagen Logo JIS Development'/>
         </div>
-        <button className={`${windowWidth > 784 ? 'oculto' : 'navbar-toggle'}`} onClick={toggleAccordion}>
+        <button className={`${windowWidth > 956 ? 'oculto' : 'navbar-toggle'}`} onClick={toggleAccordion}>
           <FontAwesomeIcon icon={faBarsStaggered} />
         </button>
-        <div className={`navbar-links ${isOpen && windowWidth <= 784 ? 'active' : ''}`}>
+        <div className={`navbar-links ${isOpen && windowWidth <= 956 ? 'active' : ''}`}>
           <a href='#paginasWeb'>Our works</a>
           <a href="#sobreNosotros">About</a>
           <a href="#opcionesDePago">Payment options</a>

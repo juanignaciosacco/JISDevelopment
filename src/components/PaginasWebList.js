@@ -21,20 +21,20 @@ const PaginasWebList = () => {
             url: "https://uynova.com",
             id: 2
         },
-        {
-            name: "Vidrios de la costa",
-            url: "https://vidriosdelacosta.com",
-            id: 3
-        },
+        // {
+        //     name: "Vidrios de la costa",
+        //     url: "https://vidriosdelacosta.com",
+        //     id: 3
+        // },
         {
             name: "SIB",
             url: "https://sib.com.uy",
-            id: 4
+            id: 3
         },
         {
             name: "AMD Import",
             url: "https://amdimport.com",
-            id: 5
+            id: 4
         }
     ]
     
