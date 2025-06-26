@@ -49,7 +49,7 @@ const Qrs = () => {
           <QrsFrame qr={qrSeleccionado} />
         ) : (
           <div className="texto_paginas_list">
-            <h3>Seleccione un menu QR para verlo</h3>
+            <h3>Select a QR Menu to view it!</h3>
           </div>
         )}
       </div>

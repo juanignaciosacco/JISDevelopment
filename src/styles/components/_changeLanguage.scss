@@ -1,0 +1,9 @@
+.changeLanguage {
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    a {
+        color: $colorAzul;
+    }
+}

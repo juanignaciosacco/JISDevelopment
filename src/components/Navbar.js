@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBarsStaggered } from '@fortawesome/free-solid-svg-icons';
+// import Logo from '../assets/Logo/LogoNuevo.png';
 import Logo from '../assets/Logo/LogoLetras.png';
 
 const Navbar = () => {

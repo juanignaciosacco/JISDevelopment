@@ -1,8 +1,9 @@
+// import LogoSoloImg from '../assets/Logo/LogoSimboloNuevo.png';
 import LogoSoloImg from '../assets/Logo/LogoSoloImagen.png';
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 
 const Portada = () => {
 
@@ -34,9 +35,9 @@ const Portada = () => {
                 <div className='imagenLogoPortada'>
                     <img src={LogoSoloImg} alt='Logo JIS Development'/>
                 </div>
-            <div className='flechaPortada'>
+            {/* <div className='flechaPortada'>
                 <a href='#widgetsTechnologies'><i><FontAwesomeIcon icon={faAngleDown} /></i></a>
-            </div>
+            </div> */}
             </motion.div>
         </div>
     )

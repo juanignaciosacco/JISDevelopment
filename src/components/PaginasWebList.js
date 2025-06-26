@@ -55,7 +55,7 @@ const PaginasWebList = () => {
                         <PaginasWebFrame pagina={paginaSeleccionada} />
                     ):(
                         <div className="texto_paginas_list">
-                            <h3>Seleccione una pagina web para verla</h3>
+                            <h3>Select a website to view it!</h3>
                         </div>
                     )}
                 </div>
